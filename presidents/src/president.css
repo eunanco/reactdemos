@@ -1,0 +1,63 @@
+.Body-text{
+  font-size: 25px;
+  padding: 20px;
+  text-align: left;
+}
+
+.Blank-line{
+  padding: 20px;
+}
+
+.Color-allstate-primary {
+  background-color: #337ab7;
+}
+
+.Label-header {
+  width:80%;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 20px;
+  background-color: #337ab7;
+}
+
+.President-input{
+  font-size: 25px;
+  padding: 20px;
+  text-align: left;
+  background-color: #337ab7;
+}
+
+.Table{
+  width:80%;
+  padding: 20px;
+}
+
+.Table-header {
+  width:80%;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 20px;
+  background-color: #337ab7;
+}
+
+.Table-row {
+  font-size: 25px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.Table-cell {
+  font-size: 25px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.Table-cell-header {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid black;
+}
