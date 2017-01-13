@@ -25,6 +25,7 @@ class App extends Component {
  }
 
  handleRemovePresident(index) {
+   console.log('called handleRemovePresident')
    var newPresidents = this.state.presidents.slice()
    newPresidents.splice(index, 1)
    this.setState({presidents: newPresidents})

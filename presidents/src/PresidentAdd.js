@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 class PresidentAdd extends Component{
 
-constructor(props){
- super(props)
+constructor(){
+ super()
  this.onSubmit=this.onSubmit.bind(this)
 }
 
@@ -12,7 +12,8 @@ onSubmit(event){
  event.preventDefault()
  var fromDate = parseInt(this.refs.newFrom.value);
  var toDate = parseInt(this.refs.newTo.value);
- this.props.onAddPresident({name:this.refs.newName.value, from: fromDate, to: toDate})
+ var namePresident = this.refs.newName.value;
+ this.props.onAddPresident({name:namePresident, from: fromDate, to: toDate})
 }
 
 

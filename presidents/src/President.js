@@ -2,14 +2,25 @@ import React, { Component } from 'react'
 
 class President extends Component {
 
+  constructor(props){
+    super(props)
+    this.onSubmit=this.onSubmit.bind(this)
+  }
 
+
+  onSubmit(event){
+    event.preventDefault()
+    console.log("pid:" + this.props.pid);
+    this.props.onClickDelete(this.props.pid)
+  }
 
  render() {
    return (
-     <li>
-       <h4>{this.props.name}</h4>
-       <p>{this.props.from} - {this.props.to}</p>
-     </li>
+     <tr>
+       <td>{this.props.name}</td>
+       <td>{this.props.from} - {this.props.to}</td>
+       <td><button type="submit" onClick={this.onSubmit}>Delete</button></td>
+     </tr>
    )
  }
 }
